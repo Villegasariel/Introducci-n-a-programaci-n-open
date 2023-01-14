@@ -1,2 +1,2 @@
-# Introducci-n-a-programaci-n-open
+# Introduccion-a-programacion-open
 Introducción a la programación de openbootcamp
