@@ -1,0 +1,52 @@
+// If
+let numeroIf = 0;
+
+if(numeroIf > 0) {
+    console.log("El número es positivo")
+} else if (numeroIf < 0) {
+    console.log("El número es negativo")
+} else {
+    console.log("El número es 0")
+}
+
+// While
+let numeroWhile = 0;
+
+while (numeroWhile < 3) {
+    numeroWhile++;
+    console.log(numeroWhile);
+}
+
+// Do While
+let numeroDoWhile = 0;
+
+do {
+    numeroDoWhile++;
+    console.log(numeroDoWhile);
+} while (numeroDoWhile < 3);
+
+// For
+let numeroFor;
+for (numeroFor = 0; numeroFor <= 3; numeroFor++) {
+    console.log(numeroFor);
+}
+
+// Switch
+let estacion = "invierno";
+
+switch (estacion) {
+    case "invierno":
+        console.log("Estamos en invierno");
+        break;
+    case "primavera":
+        console.log("Estamos en primavera");
+        break;
+    case "verano":
+        console.log("Estamos en verano");
+        break;
+    case "otoño":
+        console.log("Estamos en otoño");
+        break;
+    default:
+        console.log("La estación no es válida");
+}
