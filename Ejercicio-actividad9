@@ -1,0 +1,62 @@
+//Clase Persona
+public class Persona {
+    //variables 
+    int edad;
+    String nombre;
+    long telefono;
+    
+   //constructor
+   public Persona(int edad, String nombre, long telefono) {
+       this.edad = edad;
+       this.nombre = nombre;
+       this.telefono = telefono;
+   }
+}
+
+//Clase Cliente 
+public class Cliente extends Persona {
+    //variable 
+    double credito;
+    
+    //constructor
+    public Cliente(int edad, String nombre, long telefono, double credito) {
+        super(edad, nombre, telefono);
+        this.credito = credito;
+    }
+    
+    //metodo para mostrar datos
+    public void mostrarDatosCliente(){
+        System.out.println("Edad: "+this.edad);
+        System.out.println("Nombre: "+this.nombre);
+        System.out.println("Telefono: "+this.telefono);
+        System.out.println("Credito: "+this.credito);
+    }
+}
+
+//Clase Trabajador
+public class Trabajador extends Persona {
+    //variable
+    double salario;
+    
+    //constructor
+    public Trabajador(int edad, String nombre, long telefono, double salario) {
+        super(edad, nombre, telefono);
+        this.salario = salario;
+    }
+    
+    //metodo para mostrar datos
+    public void mostrarDatosTrabajador(){
+        System.out.println("Edad: "+this.edad);
+        System.out.println("Nombre: "+this.nombre);
+        System.out.println("Telefono: "+this.telefono);
+        System.out.println("Salario: "+this.salario);
+    }
+}
+
+//Objeto Cliente
+Cliente cliente = new Cliente(20, "Jose", 8123456789, 1000.00);
+cliente.mostrarDatosCliente();
+
+//Objeto Trabajador
+Trabajador trabajador = new Trabajador(22, "Ana", 8987654321, 2000.00);
+trabajador.mostrarDatosTrabajador();
